@@ -2,27 +2,104 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>BuildCheck AI</title>
+  <title>BuildCheck AI - Design compliance made simple.</title>
   <link rel="stylesheet" href="./style.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div class="container">
+<div id="bc" class="container">
+<header class="site-header">
+  <div class="site-name">Build<span class="colored">Check</span> AI</div>
+  <button class="contact-button">Contact sales</button>
+</header>
 
-  <div class="box text-open-sauce build-check"><div>Build<span class="check">Check</span> AI</div>
+
+  <div class="square box">Build<span class="colored">Check</span> AI</div>
+
+  <div class="button-container glow">
+    <a class='button'>Join the Waitlist</a>
   </div>
-
-
-  <div class="box container-two">
-    <button>
-      Join the Waitlist
-      <div class="fill-two"></div>
-    </button>
-  </div>
+  <div class="h-global-transition-all">© 2023 BuildCheck AI, Inc. All rights reserved.</div>
 </div>
 <!-- partial -->
 
+<!-- Popup container -->
+<div class="popup-container">
+  <!-- Popup content -->
+  <div class="popup-content">
+    <form action="https://buildcheck.us12.list-manage.com/subscribe/post?u=aaa9a9e5e4133c883e5484708&amp;id=2f1d42ddf6&amp;f_id=00d2b4e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-signin" target="_self">
+      <h2>Join the Waitlist</h2>
+      <span class="close-button">&times;</span>
+      <label for="mce-FNAME-HELPERTEXT">Full Name</label>
+      <input class="form-styling" type="text" id="mce-FNAME-HELPERTEXT" name="FNAME" placeholder="Enter your Name"/>
+      <label for="mce-EMAIL">Email<sup>*</sup></label>
+      <input class="form-styling required email" type="email" value="" name="EMAIL" id="mce-EMAIL" required placeholder="Enter your Email"/>
+      <label for="mce-LNAME">Company Name</label>
+      <input class="form-styling" type="text" value="" name="LNAME" id="mce-LNAME" placeholder="Enter your Company Name"/>
+      <div hidden="hidden"><input type="hidden" name="tags" value="10506001"></div>
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_aaa9a9e5e4133c883e5484708_2f1d42ddf6" tabindex="-1" value=""></div>
+      <div class="btn-animate">
+        <input class="btn-signin" type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe">
+      </div>
+      <div id="mce-responses">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<div class="wrapper">
+  <div class="shadow"></div>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<script>
+  const shadow = document.querySelector('.shadow');
+
+  document.addEventListener('mousemove', (e) => {
+    let x = e.clientX - (document.documentElement.clientWidth * 1.5);
+    let y = e.clientY - (document.documentElement.clientHeight * 1.5);
+    shadow.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
+  })
+
+  // Get the popup container
+  const popupContainer = document.querySelector('.popup-container');
+
+  // Get the close button
+  const closeButton = document.querySelector('.close-button');
+  const waitlistButton = document.querySelector('.glow .button');
+  const contactButton = document.querySelector('.site-header .contact-button');
+
+  // Open the popup when the page is loaded
+  // window.onload = function () {
+  //   setTimeout(function () {
+  //     popupContainer.style.display = 'block';
+  //   }, 2000);
+  // };
+
+  // Close the popup when the close button is clicked
+  closeButton.addEventListener('click', function () {
+    // popupContainer.style.display = 'none';
+    popupContainer.classList.remove('show');
+  });
+
+  // Close the popup when the close button is clicked
+  waitlistButton.addEventListener('click', function () {
+    // popupContainer.style.display = 'block';
+    popupContainer.classList.add('show');
+  });
+
+  contactButton.addEventListener('click', function () {
+    // popupContainer.style.display = 'block';
+    popupContainer.classList.add('show');
+
+  });
+
+  //
+
+
+</script>
 </body>
 </html>
