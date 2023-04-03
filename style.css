@@ -10,7 +10,7 @@ body {
   align-items: stretch;
   justify-content: center;
   height: 100vh;
-  background-color: #222;
+  background-color: #000;
 
   font-family: 'Oswald', sans-serif;
   overflow: hidden;
@@ -46,14 +46,14 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 100%;
-  width: 100%;
+  height: 102%;
+  width: 102%;
   background: linear-gradient(90deg, #38b6ff, #7B00FF);
-  background-size: 200% 200%;
+  background-size: 250% 250%;
   transform: scale(0.95);
   filter: blur(40px);
   z-index: -1;
-  animation: animated_bg 2s ease infinite;
+  animation: animated_bg 3s ease infinite;
 }
 
 @keyframes animated_text {
@@ -155,7 +155,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #222;
+  background-color: #000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: absolute;
   top:0;
@@ -217,7 +217,7 @@ body {
 .popup-content {
   box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.6);
   overflow: hidden;
-  background: #201c29;
+  background: #222222;
   color: #38b6ff;
   text-align: left;
   padding: 10px;
