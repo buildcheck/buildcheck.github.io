@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BuildCheck AI - Design compliance made simple.</title>
-  <link rel="stylesheet" href="./style.css?v=2">
+  <link rel="stylesheet" href="./style.css?v=4">
 
 </head>
 <body>
@@ -12,6 +12,7 @@
 <div id="bc" class="container">
 <header class="site-header">
   <div class="site-name">Build<span class="colored">Check</span> AI</div>
+<!--  <div class="design">Design compliance made simple.</div>-->
   <button class="contact-button">Contact sales</button>
 </header>
 
@@ -99,6 +100,12 @@
 
   });
 
+  squareButton.addEventListener('click', function () {
+    squareButton.classList.add('pulse');
+    setTimeout(function () {
+      squareButton.classList.remove('pulse');
+    }, 600);
+  })
   //
 
 
