@@ -36,6 +36,7 @@ body {
 
 }
 
+
 #bc .square span {
   animation: animated_text 10s ease infinite;
 }
@@ -83,7 +84,7 @@ body {
 
 #bc .button-container {
   position: relative;
-  margin: 170px auto;
+  margin: 200px auto;
   left: 50%;
 }
 #bc .button-container .button {
@@ -313,4 +314,147 @@ label {
   cursor: pointer;
   background-color: #0F4FE6;
   transition: background-color .5s;
+}
+
+@media (max-width: 575.98px) {
+  body {
+    min-height: 100vh; /* Change to viewport height units */
+  }
+
+  #bc div.square {
+    width: 250px;
+    height: 250px;
+    font-size: 2rem;
+    font-weight: 250;
+    line-height: 250px;
+    margin-top: 120px;
+  }
+
+  #bc .button-container {
+    margin: 140px auto;
+  }
+
+  .site-header {
+    padding: 0;
+  }
+
+  .site-name {
+    margin-left: 10vw;
+    font-size: 1.2rem;
+    margin-top: 2vh;
+  }
+
+  .contact-button {
+    padding: 3px 10px;
+    margin-right: 10vw;
+    margin-top: 2vh;
+    font-size: 0.9rem;
+  }
+
+  .popup-content {
+    margin: 2vh 2vw;
+    width: 96vw;
+    min-height: 430px;
+  }
+
+  .form-signin {
+    width: 90vw;
+    min-height: 430px;
+    font-size: 18px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 0;
+  }
+
+  label {
+    font-size: 16px;
+    padding-left: 15px;
+    padding-bottom: 8px;
+  }
+
+  .form-signin input {
+    font-size: 16px;
+  }
+  .btn-signin {
+    height: 40px;
+  }
+  .h-global-transition-all {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* CSS rules for small devices */
+  body {
+    min-height: 100vh; /* Change to viewport height units */
+  }
+
+  #bc div.square {
+    width: 350px;
+    height: 350px;
+    font-size: 3rem;
+    font-weight: 250;
+    line-height: 350px;
+    margin-top: 200px;
+  }
+
+  .h-global-transition-all {
+    display: none;
+  }
+
+  .site-header {
+    padding: 0;
+  }
+
+  .site-name {
+    margin-left: 10vw;
+    font-size: 1.4rem;
+    margin-top: 2vh;
+  }
+
+  .contact-button {
+    padding: 3px 10px;
+    margin-right: 10vw;
+    margin-top: 2vh;
+    font-size: 1.1rem;
+  }
+
+  .popup-content {
+    margin: 12vh 12vw;
+    width: 76vw;
+    min-height: 430px;
+  }
+
+  .form-signin {
+    width: 72vw;
+    min-height: 430px;
+    font-size: 18px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 0;
+  }
+
+  label {
+    font-size: 16px;
+    padding-left: 15px;
+    padding-bottom: 8px;
+  }
+
+  #bc .button-container {
+    margin: 240px auto;
+  }
+
+  #bc .button-container .button {
+    font-size: 1.6rem;
+  }
+
+  .form-signin input {
+    font-size: 16px;
+  }
+  .btn-signin {
+    height: 40px;
+  }
+  .h-global-transition-all {
+    display: none;
+  }
 }
