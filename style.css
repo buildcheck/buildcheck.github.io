@@ -12,7 +12,7 @@ body {
   min-height: 900px;
   background-color: #000;
   font-family: 'Oswald', sans-serif;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .site-header .design {
