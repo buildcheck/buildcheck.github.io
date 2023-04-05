@@ -33,7 +33,11 @@ body {
   text-align: center;
   border-radius: 20px;
   font-family: 'Oswald', sans-serif;
-
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 
