@@ -206,7 +206,7 @@ body {
 
 /* Popup container styles */
 .popup-container {
-  visibility: hidden;
+  display: none;
   opacity: 0;
   position: fixed;
   z-index: 9999;
@@ -221,7 +221,7 @@ body {
 }
 
 .show{
-  visibility: visible;
+  display: block;
   opacity: 1;
   transform: scale(1);
 }
