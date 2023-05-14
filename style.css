@@ -490,27 +490,64 @@ label {
 
 /* Add styles for navigation menu */
 
-.site-header nav {
+nav.mobile-navigation{
   display: inline-block;
   margin-top: 2vh;
 }
 
-.site-header nav ul {
+.site-header nav ul,
+nav.mobile-navigation ul{
   list-style-type: none;
   padding: 0;
 }
 
-.site-header nav ul li {
+.site-header nav ul li,
+nav.mobile-navigation ul li{
   display: inline;
   margin-right: 20px;
 }
 
-.site-header nav ul li a {
+.site-header nav ul li a,
+nav.mobile-navigation ul li a{
   color: #888888;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
 }
-.site-header nav ul li a:hover {
+.site-header nav ul li a:hover,
+nav.mobile-navigation ul li a:hover{
   color: #38b6ff;
+}
+
+nav.mobile-navigation {
+  display: none;
+}
+
+/* team.css */
+@media screen and (max-width: 768px) {
+  nav.mobile-navigation {
+    display: inline;
+  }
+
+  nav.mobile-navigation ul{
+    margin-top: 80px;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav.mobile-navigation ul li a{
+    font-size: 1.1rem;
+  }
+
+  .text-header {
+    margin-top: 80px;
+  }
+
+  nav.desktop-navigation {
+    display: none;
+  }
+
+  body {
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
 }

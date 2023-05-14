@@ -55,3 +55,14 @@
     margin-top: 160px;
     text-align: center;
 }
+
+/* team.css */
+@media screen and (max-width: 768px) {
+    .team-row {
+        flex-direction: column;
+    }
+
+    .team-member {
+        margin-bottom: 50px;
+    }
+}
