@@ -487,3 +487,30 @@ label {
     display: none;
   }
 }
+
+/* Add styles for navigation menu */
+
+.site-header nav {
+  display: inline-block;
+  margin-top: 2vh;
+}
+
+.site-header nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.site-header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.site-header nav ul li a {
+  color: #888888;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.site-header nav ul li a:hover {
+  color: #38b6ff;
+}
