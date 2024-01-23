@@ -159,6 +159,10 @@ body {
   bottom: 30px;
 }
 
+.h-global-transition-all a {
+  color: #888888;
+}
+
 /* Header */
 .site-header {
   display: flex;
